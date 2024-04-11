@@ -12,9 +12,9 @@ terraform {
 provider "aws" {
 }
 
-# resource "aws_s3_bucket" "main" {
-#   bucket = "secs-2024-is-awesome"
-# }
+resource "aws_s3_bucket" "main" {
+  bucket = "secs-2024-is-awesome"
+}
 
 # resource "aws_s3_bucket_public_access_block" "main" {
 #   bucket                  = aws_s3_bucket.main.id
